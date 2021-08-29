@@ -9,7 +9,7 @@ node {
      nodejs(nodeJSInstallationName: 'nodejs') {
        sh 'npm install --only=dev'
        sh 'npm test'
-       sh 'echo "testtesttest" > test'
+       sh 'touch test'
      }
    }
    stage('docker build/push') {
